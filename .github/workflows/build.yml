@@ -1,1 +1,1 @@
--name:Runtestsrun:mvncleantest
+name:BuildwithMavenon:push:branches:-mainpull_request:branches:-mainjobs:build:runs-on:ubuntu-lateststeps:-name:Checkoutcodeuses:actions/checkout@v2-name:SetupJDK11uses:actions/setup-java@v1with:java-version:'11'# New task to run Maven build with tests-name:RunMavenbuildrun:mvncleantest
