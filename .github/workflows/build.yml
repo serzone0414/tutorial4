@@ -1,10 +1,10 @@
 on:
   push:
     branches:
-      - main
+      - Calc
   pull_request:
     branches:
-      - main
+      - Calc
 
 jobs:
   name: Run tests
