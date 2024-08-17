@@ -1,0 +1,1 @@
+name:BuildwithMavenon:push:branches:-mainpull_request:branches:-mainjobs:build:runs-on:ubuntu-lateststeps:-name:Checkoutcodeuses:actions/checkout@v2-name:SetupJDK7uses:actions/setup-java@v1with:java-version:'7'-name:BuildwithMavenrun:mvncleaninstall-name:RunTestrun:mvncleantest
