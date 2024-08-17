@@ -1,6 +1,13 @@
-mvn clean test 
-
-As
- # Run tests
-      - name: Run tests
-        run: mvn clean test
+name:BuildwithMaven
+on:push:branches:-main
+pull_request:branches:-main
+jobs:build:runs-on:ubuntu-latest
+steps:-name:Checkoutcode
+uses:actions/checkout@v2
+-name:SetupJDK
+7uses:actions/setup-java@v1
+with:java-version:'7'
+-name:BuildwithMaven
+run:mvncleaninstall
+-name:RunTest
+run:mvncleantest
