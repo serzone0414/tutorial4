@@ -1,11 +1,2 @@
-on:
-  push:
-    branches:
-      - Calc
-  pull_request:
-    branches:
-      - Calc
-
-jobs:
   name: Run tests
   run: mvn clean test
